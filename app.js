@@ -16,19 +16,19 @@ const teachersData = {
     name: 'Джон'
   },
   egor: {
-    calendarId: 'calendarId',
+    calendarId: 'calendarId@group.calendar.google.com',
     name: 'Егор'
   },
   vlad: {
-    calendarId: 'calendarId',
+    calendarId: 'calendarId@group.calendar.google.com',
     name: 'Влад'
   },
   lex: {
-    calendarId: 'calendarId',
+    calendarId: 'calendarId@group.calendar.google.com',
     name: 'Александр'
   },
   elizabeth: {
-    calendarId: 'calendarId',
+    calendarId: 'calendarId@group.calendar.google.com',
     name: 'Елизавета'
   }
 }
@@ -45,7 +45,7 @@ app.use(cors(corsOptions))
 const { OAuth2 } = google.auth
 
 const oAuth2Client = new OAuth2(
-  'clientId', 
+  'clientId.apps.googleusercontent.com', 
   'clientSecret'
 )
 
